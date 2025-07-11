@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yasha_Nova | Vtuber Showcase</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Outfit&display=swap" rel="stylesheet">
   <style>
@@ -31,14 +31,24 @@
     }
 
     .avatar {
-      width: 150px;
-      height: 150px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
       border: 3px solid #ff66cc;
       box-shadow: 0 0 25px #ff66cc;
       margin-bottom: 1.5rem;
       animation: pulse 4s infinite ease-in-out;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .avatar img {
+      width: 160px;
+      height: 160px;
       object-fit: cover;
+      border-radius: 50%;
     }
 
     h1 {
@@ -76,34 +86,48 @@
       transform: scale(1.05);
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      max-width: 400px;
-      margin: 3rem auto 0;
-      gap: 1rem;
+    .anon-form {
+      margin-top: 3rem;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
     }
 
-    input, textarea {
+    .anon-form h2 {
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      color: #ffccff;
+    }
+
+    .anon-form textarea {
+      width: 100%;
+      height: 120px;
       padding: 0.8rem;
-      border-radius: 10px;
+      border-radius: 8px;
       border: none;
+      resize: vertical;
+      font-family: 'Outfit', sans-serif;
+      font-size: 1rem;
+      background: #300050;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+
+    .anon-form button {
+      background: #7a00cc;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
       font-size: 1rem;
     }
 
-    button {
-      background-color: #ff66cc;
-      color: white;
-      padding: 0.8rem;
-      border: none;
-      border-radius: 8px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #e055b8;
+    .anon-form button:hover {
+      background: #ff66cc;
     }
 
     @keyframes fadeIn {
@@ -119,12 +143,14 @@
 </head>
 <body>
   <section class="hero">
-    <img src="https://i.imgur.com/RyqXIkX.gif" alt="Avatar" class="avatar" />
+    <div class="avatar">
+      <img src="https://raw.githubusercontent.com/Cuba-tech930/yasha-nova.github.io/main/d2ef23f4-3f2e-4282-bc86-5d3c7556b90c.png" alt="Yasha_Nova" />
+    </div>
     <h1>Yasha_Nova</h1>
     <p>Cucciolo di FastArcherX (Owner di Barolo)<br>
     La sex Waifu di MrPane Jr (Trial Mod SP di Barolo)<br>
     Seguimi nel mio mondo kawaii-psichedelico~ 💕</p>
-    
+
     <div class="socials">
       <a href="https://linktr.ee/Yasha_Nova" target="_blank">Linktree</a>
       <a href="https://discord.gg/barolo" target="_blank">Discord</a>
@@ -133,10 +159,10 @@
       <a href="https://open.spotify.com/user/kuba.rotolo" target="_blank">Spotify</a>
     </div>
 
-    <h2 style="margin-top:3rem; color:#ffccff;">Inviami messaggi anonimi 💌</h2>
-    <form action="https://formsubmit.co/phoenixbestwaifu@gmail.com" method="POST">
-      <input type="text" name="name" placeholder="Il tuo nome (opzionale)">
-      <textarea name="message" placeholder="Scrivi un messaggio anonimo..." required></textarea>
+    <form action="https://formsubmit.co/phoenixbestwaifu@gmail.com" method="POST" class="anon-form">
+      <h2>Inviami messaggi anonimi 💌</h2>
+      <textarea name="message" placeholder="Scrivi qui il tuo messaggio anonimo..." required></textarea>
+      <input type="hidden" name="_captcha" value="false">
       <button type="submit">Invia</button>
     </form>
   </section>
