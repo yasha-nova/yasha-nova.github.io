@@ -1,1 +1,1 @@
-# https://yasha-nova.is-a.dev
+# yasha-nova.github.io
