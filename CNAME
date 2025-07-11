@@ -1,7 +1,0 @@
-www.yasha-nova.is-a-dev
-
-$ dig www.yasha-nova.is-a-dev +noall +answer -t A
-> www.yasha-nova.is-a-dev    3600    IN A     185.199.108.153
-> www.yasha-nova.is-a-dev    3600    IN A     185.199.109.153
-> www.yasha-nova.is-a-dev    3600    IN A     185.199.110.153
-> www.yasha-nova.is-a-dev    3600    IN A     185.199.111.153
