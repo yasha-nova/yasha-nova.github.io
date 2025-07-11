@@ -2,101 +2,110 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yasha_Nova | Vtuber Showcase</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Outfit&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yasha_Nova</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: linear-gradient(120deg, #1e0036, #4b007d);
-      font-family: 'Outfit', sans-serif;
-      color: #fff;
-      overflow-x: hidden;
-    }
-    .hero {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      background: #2a003f;
+      color: white;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
       text-align: center;
-      padding: 2rem;
-      animation: fadeIn 1.5s ease;
+      margin: 0;
+      padding: 0;
     }
+
     .avatar {
       width: 180px;
       height: 180px;
       border-radius: 50%;
-      border: 3px solid #ff66cc;
+      margin-top: 40px;
+      border: 4px solid #ff66cc;
       box-shadow: 0 0 25px #ff66cc;
-      margin-bottom: 1.5rem;
-      animation: pulse 4s infinite ease-in-out;
       object-fit: cover;
     }
-    h1 { font-family: 'Orbitron', sans-serif; font-size: 2.5rem; color: #ffccff; }
-    p { max-width: 600px; font-size: 1.1rem; margin: 1rem auto; color: #e0c9ff; }
-    .socials {
-      display: flex; gap: 1.2rem; margin-top: 1.5rem;
-      justify-content: center; flex-wrap: wrap;
+
+    h1 {
+      font-size: 36px;
+      margin: 20px 0 10px;
+      color: #ffccff;
     }
-    .socials a {
-      text-decoration: none; color: #fff;
-      background: #7a00cc; padding: 0.6rem 1rem;
-      border-radius: 8px; transition: background 0.3s, transform 0.2s;
+
+    p {
+      margin: 4px;
     }
-    .socials a:hover {
-      background: #ff66cc; transform: scale(1.05);
+
+    .buttons a {
+      background: #9c27b0;
+      color: white;
+      padding: 10px 20px;
+      margin: 8px;
+      border-radius: 10px;
+      display: inline-block;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .anon-box {
-      margin-top: 2rem; background: #2d004d;
-      padding: 1rem 1.5rem; border-radius: 10px;
-      box-shadow: 0 0 10px #ff66cc;
-      max-width: 600px; width: 100%;
+
+    .msg-box {
+      background: #3c005a;
+      padding: 20px;
+      margin: 40px auto;
+      max-width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #ff66cc;
     }
-    .anon-box h2 { margin-bottom: 1rem; color: #ffccff; }
-    .anon-box input, .anon-box textarea {
-      width: 100%; padding: 0.6rem;
-      margin-bottom: 1rem; border: none; border-radius: 6px;
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+      resize: vertical;
     }
-    .anon-box button {
-      padding: 0.6rem 1.2rem; background: #ff66cc;
-      border: none; color: white; border-radius: 6px;
-      cursor: pointer; transition: 0.2s;
+
+    button {
+      background: #ff66cc;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: none;
+      margin-top: 10px;
+      font-weight: bold;
+      cursor: pointer;
     }
-    .anon-box button:hover { background: #e055bb; }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    @keyframes pulse {
-      0%, 100% { box-shadow: 0 0 25px #ff66cc; }
-      50% { box-shadow: 0 0 50px #ff66cc; }
+
+    button:hover {
+      background: #ff3399;
     }
   </style>
 </head>
 <body>
-  <section class="hero">
-    <img src="https://i.imgur.com/AlG6CkZ.png" alt="Avatar" class="avatar" />
-    <h1>Yasha_Nova</h1>
-    <p>Cucciolo di FastArcherX (Owner di Barolo)<br>
-    La sex Waifu di MrPane Jr (Trial Mod SP di Barolo)<br>
-    Seguimi nel mio mondo kawaii-psichedelico~ 💕</p>
-    <div class="socials">
-      <a href="https://linktr.ee/Yasha_Nova" target="_blank">Linktree</a>
-      <a href="https://discord.gg/barolo" target="_blank">Discord</a>
-      <a href="https://tiktok.com/@selene.velvet.vt" target="_blank">TikTok</a>
-      <a href="https://twitch.tv/selenevelvetvt" target="_blank">Twitch</a>
-      <a href="https://open.spotify.com/user/kuba.rotolo" target="_blank">Spotify</a>
-    </div>
+  <!-- Avatar GIF -->
+  <img src="weepymiyu-anime-kiss.gif" alt="Yasha GIF" class="avatar" />
 
-    <div class="anon-box">
-      <h2>Inviami messaggi anonimi 💌</h2>
-      <form action="https://formsubmit.co/phoenixbestwaifu@gmail.com" method="POST">
-        <input type="text" name="name" placeholder="Il tuo nome (facoltativo)" />
-        <textarea name="message" rows="5" placeholder="Scrivi il tuo messaggio..." required></textarea>
-        <button type="submit">Invia Messaggio</button>
-      </form>
-    </div>
-  </section>
+  <!-- Nome -->
+  <h1>Yasha_Nova</h1>
+  <p>Cucciolo di FastArcherX (Owner di Barolo)</p>
+  <p>La sex Waifu di MrPane Jr (Trial Mod SP di Barolo)</p>
+  <p>Seguimi nel mio mondo kawaii-psichedelico~ 💕</p>
+
+  <!-- Link -->
+  <div class="buttons">
+    <a href="#">Linktree</a>
+    <a href="#">Discord</a>
+    <a href="#">TikTok</a>
+    <a href="#">Twitch</a>
+    <a href="#">Spotify</a>
+  </div>
+
+  <!-- Messaggi anonimi -->
+  <div class="msg-box">
+    <h2>Inviami messaggi anonimi 💌</h2>
+    <form action="mailto:phoenixbestwaifu@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Il tuo nome (facoltativo)">
+      <textarea name="message" placeholder="Scrivi il tuo messaggio..." rows="6"></textarea>
+      <button type="submit">Invia Messaggio</button>
+    </form>
+  </div>
 </body>
 </html>
